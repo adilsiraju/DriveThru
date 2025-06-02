@@ -10,6 +10,8 @@ def get_item(x):
 
 def welcome():
     print("Hello!\nWelcome to McD!\nToday's Menu:")
+
+def menu():
     print('''
     1. 🍔 Cheeseburger
     2. 🍟 Fries
@@ -19,6 +21,7 @@ def welcome():
     ''')
 
 welcome()
+menu()
 try:
     option = int(input("What would you like to order? Enter a number (1-5): "))
     print(get_item(option))
